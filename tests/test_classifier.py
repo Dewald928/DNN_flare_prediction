@@ -1,6 +1,7 @@
 from pytorch_lightning import Trainer, seed_everything
 
 from project.lit_classifier_main import LitClassifier
+from project.models import LitClassifier
 from project.datamodule import MNISTDataModule
 
 

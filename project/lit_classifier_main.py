@@ -4,8 +4,8 @@ import torch
 import pytorch_lightning as pl
 from pytorch_lightning.metrics.functional import accuracy
 from torch.nn import functional as F
-from datamodule import MNISTDataModule
-from models import LitClassifier
+from project.datamodule import MNISTDataModule
+from project.models import LitClassifier
 
 
 def cli_main():
