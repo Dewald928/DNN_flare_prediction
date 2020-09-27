@@ -3,13 +3,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='project',
+    name='DNN flare prediction',
     version='0.0.0',
-    description='Describe Your Cool Project',
-    author='',
+    description='Flare Prediction with lightning',
+    author='Dewald Krynauw',
     author_email='',
     # REPLACE WITH YOUR OWN GITHUB PROJECT LINK
-    url='https://github.com/PyTorchLightning/pytorch-lightning-conference-seed',
+    url='https://github.com/Dewald928/DNN_flare_prediction.git',
     install_requires=['pytorch-lightning'],
     packages=find_packages(),
 )

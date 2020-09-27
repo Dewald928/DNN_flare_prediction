@@ -9,7 +9,7 @@ def test_lit_classifier():
     model = LitClassifier()
     train, val, test = mnist()
     trainer = Trainer(limit_train_batches=50, limit_val_batches=20, max_epochs=2)
-    trainer.fit(model, train, val)
+    trainer.fit(model, dm)
 
-    results = trainer.test(test_dataloaders=test)
+    results = trainer.test(datamodule=dm)
     assert results[0]['test_acc'] > 0.7
